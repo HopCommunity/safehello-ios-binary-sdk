@@ -3,6 +3,19 @@
 
 The Safest, Fastest Way To Connect. SafeHello helps you find the person you're looking for quickly and more confidently.
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Features](#features)
+   * [Installation](#installation)
+      * [Swift Package Manager](#swift-package-manager)
+      * [Cocoapods](#cocoapods)
+      * [Manual](#manual)
+   * [Usage](#usage)
+   * [License](#license)
+<!--te-->
+
 ## Features
 
 - **Unique SafeSignal**: You and the person you’re meeting will be assigned a matching, easy-to-spot signal with a unique color combination.
@@ -52,5 +65,9 @@ The iOS SDK is distributed as binary frameworks and is compatible with iOS 14 an
 2. Unzip the `SafeHelloSDK.zip`
 
 3. Drag the SafeHelloSDK.xcframework into your `App Target > General Tab > Frameworks, Libraries and Embeded Content`, and double-check that the framework  is embedded.
+
+## Usage
+
+
 
 ## License
