@@ -1,6 +1,6 @@
 # SafeHello iOS SDK
 
-The safest, fastest Way To Connect. SafeHello helps you find the person you're looking for quickly and more confidently.
+The Safest, Fastest Way To Connect. SafeHello helps you find the person you're looking for quickly and more confidently.
 
 ## Features
 
