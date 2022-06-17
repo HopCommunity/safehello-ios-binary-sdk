@@ -145,4 +145,4 @@ class ViewController: UIViewController {
 
 ## License
 
-- [SafeHello iOS SDK License](LICENSE)
+[SafeHello iOS SDK License](LICENSE)
