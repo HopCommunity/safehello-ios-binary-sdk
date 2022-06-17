@@ -46,9 +46,9 @@ The iOS SDK is distributed as binary frameworks and is compatible with iOS 14 an
 
 ### Manual
 
-1. Download the binary framework (SafeHelloSDK.zip) from the release attachments
+1. Download the binary framework (`SafeHelloSDK.zip`) from the [release](https://github.com/HopCommunity/safehello-ios-binary-sdk/releases) attachments
 
-2. Unzip the SafeHelloSDK.zip
+2. Unzip the `SafeHelloSDK.zip`
 
 3. Drag the SafeHelloSDK.xcframework into your `App Target > General Tab > Frameworks, Libraries and Embeded Content`, and double-check that the framework  is embedded.
 
