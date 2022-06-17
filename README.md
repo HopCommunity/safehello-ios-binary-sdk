@@ -13,6 +13,10 @@ Table of contents
       * [Cocoapods](#cocoapods)
       * [Manual](#manual)
    * [Usage](#usage)
+      * [Connect to SafeHello](#connect-to-safehello)
+      * [Launch SafeHello](#launch-safehello)
+        * [SwiftUI](#swiftui)
+        * [UIKit](#uikit)
    * [License](#license)
 <!--te-->
 
@@ -68,6 +72,75 @@ The iOS SDK is distributed as binary frameworks and is compatible with iOS 14 an
 
 ## Usage
 
+To start using the framework, import the SDK:
 
+```swift
+import SafeHelloSDK
+```
+### Connect to SafeHello
+
+To establish a secure connection with SafeHello, from your backend server you will need to provide an endpoint to get a connection token. Once you receive a token, you can set it on the SafeHelloClient and send the connect command.
+
+```swift
+private func connectToSafeHello() {
+  SafeHelloClient.shared.token = "Your-fetched-connection-token" // Fetch from your backend server
+  SafeHelloClient.shared.connect { error in }
+}
+```
+
+### Launch SafeHello 
+
+#### SwiftUI
+
+To incorporate the SafeHello flow into your app, you just need to use the `showSafeHello(configuration:)` or `presentSafeHello(configuration:)` SwiftUI modifier. The config contains details about the current user’s id and event that will be present and also allows us to customize the initial title and subtitle that could be specific to your app.
+
+```swift
+import SwiftUI
+import SafeHelloSDK
+
+struct ContentView: View {
+    @State private var configuration: Configuration?
+
+    var body: some View {
+        Button(action: launchSafeHello) {
+            Text("Launch SafeHello")
+        }
+        .presentSafeHello(configuration: $configuration)
+    }
+
+    private func launchSafeHello() {
+        configuration = Configuration(
+            userId: "current-user-id",
+            eventId: "any-valid-event-id",
+            title: "Demo Meeting",
+            subtitle: "08:00PM"
+        )
+    }
+}
+```
+
+#### UIKit
+
+For UIKit integration the `SafeHelloFlowController` component is provided, it exposes methods to display the SafeHello flow. The flow can be presented modally or adaptive, using `present(configuration:from:)` or `show(configuration:from:)` respectively.
+
+```swift
+import UIKit
+import SafeHelloSDK
+
+class ViewController: UIViewController {
+    ...
+
+    @IBAction func launchSafeHello() {
+        let config = Configuration(
+            userId: “current-user-id",
+            eventId: “any-valid-event-id“,
+            title: “Demo Meeting",
+            subtitle: "08:00PM"
+        )
+
+        SafeHelloFlowController.present(configuration: config, from: self)
+    }
+}
+```
 
 ## License
