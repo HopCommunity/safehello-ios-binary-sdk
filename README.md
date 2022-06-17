@@ -94,6 +94,8 @@ private func connectToSafeHello() {
 
 To incorporate the SafeHello flow into your app, you just need to use the `showSafeHello(configuration:)` or `presentSafeHello(configuration:)` SwiftUI modifier. The configuration contains details about the current user’s id and event that will be present and also allows us to customize the initial title and subtitle that could be specific to your app.
 
+> `showSafeHello(configuration:)` requires your View to be wrapped in a `NavigationView`
+
 ```swift
 import SwiftUI
 import SafeHelloSDK
