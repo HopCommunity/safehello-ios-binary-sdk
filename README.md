@@ -1,4 +1,5 @@
 # SafeHello iOS SDK
+[![SPM](https://img.shields.io/badge/SPM-compatible-green)](https://www.swift.org/package-manager/)
 
 The Safest, Fastest Way To Connect. SafeHello helps you find the person you're looking for quickly and more confidently.
 
