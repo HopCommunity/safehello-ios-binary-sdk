@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     s.module_name = "SafeHelloSDK"
-    s.source = { :http => "https://github.com/HopCommunity/safehello-ios-binary-sdk/releases/download/#{s.version}/#{s.module_name}.zip" }
+    s.source = { :http => "https://github.com/SafeHello/safehello-ios-binary-sdk/releases/download/#{s.version}/#{s.module_name}.zip" }
     s.vendored_frameworks = "#{s.module_name}.xcframework"
     s.preserve_paths = "#{s.module_name}.xcframework/*"
 end
