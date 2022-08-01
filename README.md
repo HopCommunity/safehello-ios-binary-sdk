@@ -34,9 +34,9 @@ The iOS SDK is distributed as binary frameworks and is compatible with iOS 14 an
 
 ### Swift Package Manager
 
-1. In Xcode, select from the menu `File > Add Packages…` and enter https://github.com/HopCommunity/safehello-ios-binary-sdk.git as the package URL.  
+1. In Xcode, select from the menu `File > Add Packages…` and enter https://github.com/SafeHello/safehello-sdk-ios.git as the package URL.  
   
-2. Select the latest version from our [release](https://github.com/HopCommunity/safehello-ios-binary-sdk/releases) page. 
+2. Select the latest version from our [release](https://github.com/SafeHello/safehello-sdk-ios/releases) page. 
 
 3. Choose the app target that should include the SafeHelloSDK product.
 
@@ -64,7 +64,7 @@ The iOS SDK is distributed as binary frameworks and is compatible with iOS 14 an
 
 ### Manual
 
-1. Download the binary framework (`SafeHelloSDK.zip`) from the [release](https://github.com/HopCommunity/safehello-ios-binary-sdk/releases) attachments
+1. Download the binary framework (`SafeHelloSDK.zip`) from the [release](https://github.com/SafeHello/safehello-sdk-ios/releases) attachments
 
 2. Unzip the `SafeHelloSDK.zip`
 
