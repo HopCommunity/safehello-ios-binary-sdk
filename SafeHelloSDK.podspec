@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name = "SafeHelloSDK"
-    s.version = "1.0.0"
+    s.version = 1.1.0
     s.summary = "SafeHello iOS Client"
     s.description = "The SafeHello app helps you find the person you’re looking for quickly and more confidently."
     s.homepage = "https://www.safehello.com/"
