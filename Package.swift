@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SafeHelloSDK",
-            url: "https://github.com/SafeHello/safehello-sdk-ios/releases/download/1.1.0/SafeHelloSDK.zip",
-            checksum: "d31f3b9ac1d6eb8da65b2e751d3f148693dfd8c12533faba86cea71945c79a99"
+            url: "https://github.com/SafeHello/safehello-sdk-ios/releases/download/1.1.1/SafeHelloSDK.zip",
+            checksum: "d95d9340802d3107e6a2c889e993e61b19b891e0aa602d939cc9419cd9ddb403"
         )
     ]
 )
